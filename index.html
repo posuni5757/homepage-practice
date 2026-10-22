@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>차지현 교수요원 | 경찰수사연수원 강의</title>
+<meta name="description" content="경찰수사연수원 반부패공공범죄수사학과 차지현 교수요원의 강의 소개 페이지">
+
+<!--
+=====================================================================
+  ★ 여기만 고치면 됩니다 (메모장으로 열어 따옴표 안의 글만 바꾸세요) ★
+=====================================================================
+  1) 카카오톡 오픈채팅 주소  → 아래 KAKAO_URL
+  2) 유튜브 영상 ID          → 아래 YOUTUBE_ID
+       (주소가 https://www.youtube.com/watch?v=abc123 이면 abc123 이 ID)
+  3) 사진 파일 이름          → 아래 PHOTO
+       (이 파일과 같은 폴더에 사진을 넣고 파일명을 적으세요)
+=====================================================================
+-->
+<script>
+  var KAKAO_URL  = "https://open.kakao.com/o/s1nUanOi";
+  var YOUTUBE_ID = "";              // 예: "dQw4w9WgXcQ"  (비어 있으면 안내 상자가 보입니다)
+  var PHOTO      = "profile.jpg";   // 프로필 사진 파일명
+</script>
+
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f6f8fb;
+    --ink:#1b2430;
+    --ink-soft:#5a6675;
+    --line:#e5e9ef;
+    --navy:#14325c;
+    --navy-dark:#0d2242;
+    --kakao:#fee500;
+    --kakao-ink:#191600;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:72px}
+  body{
+    font-family:"Pretendard","Malgun Gothic","맑은 고딕",system-ui,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.7;
+    -webkit-font-smoothing:antialiased;word-break:keep-all;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+  /* 상단 메뉴 */
+  header{
+    position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+  .logo{font-weight:800;color:var(--navy);font-size:17px;white-space:nowrap}
+  nav ul{display:flex;gap:4px;list-style:none;overflow-x:auto;scrollbar-width:none}
+  nav ul::-webkit-scrollbar{display:none}
+  nav a{display:block;padding:8px 12px;border-radius:8px;font-size:15px;font-weight:600;color:var(--ink-soft);white-space:nowrap}
+  nav a:hover{background:var(--bg-soft);color:var(--navy)}
+
+  /* 버튼 */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 24px;border-radius:12px;font-weight:700;font-size:16px;cursor:pointer;border:0;
+  }
+  .btn-kakao{background:var(--kakao);color:var(--kakao-ink)}
+  .btn-kakao:hover{filter:brightness(.95)}
+  .btn-line{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+  .btn-line:hover{background:var(--bg-soft)}
+
+  /* 첫 화면 */
+  .hero{padding:56px 0 64px;background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%)}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+  .tag{display:inline-block;background:#e8eef7;color:var(--navy);font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.3;color:var(--navy-dark);letter-spacing:-.02em;margin-bottom:18px}
+  .hero p.lead{font-size:18px;color:var(--ink-soft);margin-bottom:28px;max-width:520px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+  .photo{
+    aspect-ratio:4/5;border-radius:20px;background:#e8eef7;overflow:hidden;position:relative;
+    box-shadow:0 20px 50px rgba(20,50,92,.15);display:flex;align-items:center;justify-content:center;
+  }
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:32% 30%;display:block}
+  .photo .ph{position:absolute;text-align:center;color:var(--navy);font-weight:700;padding:20px}
+  .photo .ph small{display:block;font-weight:500;color:var(--ink-soft);margin-top:6px}
+
+  /* 신뢰 숫자 띠 */
+  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+  .trust-item{padding:22px 8px;border-right:1px solid var(--line)}
+  .trust-item:last-child{border-right:0}
+  .trust-item b{display:block;color:var(--navy);font-size:19px}
+  .trust-item span{font-size:14px;color:var(--ink-soft)}
+
+  /* 공통 구역 */
+  section.block{padding:72px 0}
+  section.soft{background:var(--bg-soft)}
+  .eyebrow{color:var(--navy);font-weight:800;font-size:14px;letter-spacing:.08em;margin-bottom:8px}
+  h2{font-size:clamp(24px,3.6vw,32px);color:var(--navy-dark);letter-spacing:-.02em;margin-bottom:12px;line-height:1.35}
+  .sub{color:var(--ink-soft);margin-bottom:32px;max-width:880px;text-wrap:balance}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card .k{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px}
+  .card h3{font-size:18px;color:var(--ink);margin-bottom:6px;line-height:1.45}
+  .card p{color:var(--ink-soft);font-size:15px}
+
+  .list{list-style:none;display:grid;gap:12px}
+  .list li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+  .list li::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:#e8eef7;color:var(--navy);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px;margin-top:2px}
+  .list strong{display:block;color:var(--ink)}
+  .list span{color:var(--ink-soft);font-size:15px}
+
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:600;color:var(--navy)}
+
+  .ask{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:18px 20px;background:#fff;border:1px dashed #b9c6da;border-radius:14px}
+  .ask p{flex:1;min-width:200px;color:var(--ink-soft);font-size:15px}
+  section.soft .ask{background:#fff}
+
+  /* 영상 */
+  .video{aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#0d2242;box-shadow:0 20px 50px rgba(20,50,92,.18)}
+  .video iframe{width:100%;height:100%;border:0;display:block}
+  .video .empty{height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px;font-weight:600}
+  .video .empty small{display:block;font-weight:400;opacity:.75;margin-top:6px}
+
+  /* 자격증 사진 */
+  .certs-title{margin:36px 0 14px;font-size:18px;color:var(--navy-dark)}
+  .certs-title small{font-weight:400;color:var(--ink-soft);font-size:14px}
+  .certs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:720px}
+  .cert{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;cursor:zoom-in;transition:box-shadow .2s}
+  .cert:hover{box-shadow:0 10px 30px rgba(20,50,92,.15)}
+  .cert img{width:100%;height:auto;display:block;border-radius:8px}
+  .cert figcaption{margin-top:10px;font-size:14px;font-weight:600;color:var(--ink-soft);text-align:center}
+  .lightbox{position:fixed;inset:0;background:rgba(13,34,66,.85);display:none;align-items:center;justify-content:center;z-index:50;padding:20px;cursor:zoom-out}
+  .lightbox.on{display:flex}
+  .lightbox img{max-width:100%;max-height:100%;border-radius:10px;background:#fff}
+  @media (max-width:560px){.certs{grid-template-columns:1fr}}
+
+  /* 핵심 강의 영역 */
+  .courses{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .course{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+  .course-img{aspect-ratio:16/8;background:#e8eef7;overflow:hidden}
+  .course-img img{width:100%;height:100%;object-fit:cover;display:block}
+  .course-img-plain{display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#14325c,#2a5a9a)}
+  .course-img-plain b{color:#fff;font-size:64px;font-weight:800;opacity:.9}
+  .course-body{padding:20px 22px 24px}
+  .course-body span{display:inline-block;background:var(--navy);color:#fff;font-size:12px;font-weight:800;padding:3px 10px;border-radius:999px;margin-bottom:8px}
+  .course-body h3{font-size:19px;color:var(--ink);margin-bottom:6px;line-height:1.4}
+  .course-body p{color:var(--ink-soft);font-size:15px}
+  @media (max-width:700px){.courses{grid-template-columns:1fr}}
+
+  /* 논문 */
+  .papers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .papers .cert figcaption{text-align:left;line-height:1.55;font-weight:500}
+  .papers .cert figcaption b{color:var(--navy)}
+  .papers .cert figcaption small{color:var(--ink-soft);font-weight:400}
+  .papers .cert img{aspect-ratio:4/3;object-fit:cover;object-position:top left;border:1px solid var(--line)}
+  @media (max-width:800px){.papers{grid-template-columns:1fr}}
+
+  /* 음악 채널 */
+  .music{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+  .music-points{list-style:none;margin-bottom:24px;display:grid;gap:8px;color:var(--ink-soft)}
+  .music-points li::before{content:"♪";color:var(--navy);font-weight:800;margin-right:10px}
+  .music-card{
+    aspect-ratio:1/1;border-radius:20px;background:linear-gradient(145deg,#14325c,#2a5a9a);color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;padding:24px;
+    box-shadow:0 20px 50px rgba(20,50,92,.22);transition:transform .2s
+  }
+  .music-card:hover{transform:translateY(-4px)}
+  .music-card .play{width:64px;height:64px;border-radius:50%;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:12px;padding-left:4px}
+  .music-card b{font-size:26px;letter-spacing:.02em}
+  .music-card span{opacity:.9}
+  .music-card small{opacity:.6;margin-top:10px}
+  @media (max-width:800px){.music{grid-template-columns:1fr}.music-card{aspect-ratio:auto;padding:36px 20px}}
+
+  /* 인사말 */
+  .greet{max-width:720px;margin:0 auto;text-align:center}
+  .greet p{color:var(--ink-soft);font-size:17px;margin-top:14px}
+  .greet .sign{margin-top:26px;color:var(--ink)}
+  .greet .sign b{color:var(--navy);font-size:20px;margin-left:6px}
+
+  /* 3단계 */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;position:relative}
+  .step span{display:inline-block;background:var(--navy);color:#fff;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;margin-bottom:10px}
+  .step h3{font-size:18px;margin-bottom:6px}
+  .step p{color:var(--ink-soft);font-size:15px}
+  @media (max-width:800px){.steps{grid-template-columns:1fr}}
+
+  /* 마지막 문의 */
+  .final{background:var(--navy-dark);color:#fff;text-align:center;padding:72px 0}
+  .final h2{color:#fff}
+  .final p{color:#c9d5e8;margin:0 auto 28px;max-width:520px}
+
+  footer{padding:28px 0;text-align:center;color:var(--ink-soft);font-size:14px;border-top:1px solid var(--line)}
+
+  /* 모바일 하단 고정 문의 버튼 */
+  .float{
+    position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 8px 24px rgba(0,0,0,.2);
+    border-radius:999px;padding:14px 20px;display:none
+  }
+
+  @media (max-width:800px){
+    .hero{padding:32px 0 44px}
+    .hero-grid{grid-template-columns:1fr;gap:28px}
+    .photo{max-width:320px;margin:0 auto;order:-1}
+    .trust-grid{grid-template-columns:repeat(2,1fr)}
+    .trust-item:nth-child(2){border-right:0}
+    .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    section.block{padding:52px 0}
+    .logo{font-size:15px}
+    .float{display:inline-flex}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">차지현 교수요원</a>
+    <nav>
+      <ul>
+        <li><a href="#greeting">인사말</a></li>
+        <li><a href="#edu">학력</a></li>
+        <li><a href="#papers">연구 논문</a></li>
+        <li><a href="#career">교육 경력</a></li>
+        <li><a href="#courses">강의 영역</a></li>
+        <li><a href="#cert">전문교육 이수</a></li>
+        <li><a href="#lecture">국가기관 강연</a></li>
+        <li><a href="#music">음악 채널</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 첫 화면: 강사 소개 -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">경찰수사연수원 반부패공공범죄수사학과</span>
+        <h1>현장을 아는 수사 전문가가<br>알기 쉽게 가르칩니다</h1>
+        <p class="lead">경찰수사연수원 교수요원 차지현입니다. 성폭력 수사, 임상심리, 양성평등 분야의 전문성을 바탕으로 국가기관과 교육기관에서 강의하고 있습니다.</p>
+        <div class="hero-cta">
+          <a class="btn btn-kakao js-kakao" target="_blank" rel="noopener">💬 카카오톡으로 강의 문의</a>
+          <a class="btn btn-line" href="#music">♪ 음악 채널 보기</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img id="photoImg" alt="차지현 교수요원 프로필 사진" style="display:none">
+        <div class="ph" id="photoPh">프로필 사진 자리<small>사진을 넣으면 이곳에 표시됩니다</small></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 신뢰 띠 -->
+  <div class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item"><b>석사 2개</b><span>범죄학 · 범죄수사</span></div>
+      <div class="trust-item"><b>전문수사관</b><span>경찰청 성폭력전문수사관</span></div>
+      <div class="trust-item"><b>임상심리사 2급</b><span>공인 자격 보유</span></div>
+      <div class="trust-item"><b>국가기관 강연</b><span>다수 기관 출강</span></div>
+    </div>
+  </div>
+
+  <!-- 인사말 (참고 사이트처럼 강사가 직접 건네는 말) -->
+  <section class="block" id="greeting">
+    <div class="wrap">
+      <div class="greet">
+        <div class="eyebrow">GREETING</div>
+        <h2>"배운 것이 현장에서 쓰이도록<br>돕겠습니다"</h2>
+        <p>안녕하세요, 경찰수사연수원 교수요원 차지현입니다.</p>
+        <p>수사는 법 조문만으로 되지 않고, 사람을 이해하는 힘이 함께 필요하다고 생각합니다. 그래서 범죄학과 범죄수사, 그리고 임상심리를 함께 공부하고 가르쳐 왔습니다.</p>
+        <p>어렵고 딱딱한 내용도 듣는 분이 바로 써먹을 수 있도록 쉽게 풀어서 전달하겠습니다. 여러분의 자리에 꼭 맞는 강의로 함께 하겠습니다.</p>
+        <div class="sign">경찰수사연수원 교수요원 <b>차지현</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 학력 -->
+  <section class="block soft" id="edu">
+    <div class="wrap">
+      <div class="eyebrow">EDUCATION</div>
+      <h2>학력</h2>
+      <p class="sub">범죄학과 범죄수사를 깊이 있게 공부했습니다. 이론과 실무를 함께 다루는 것이 강의의 바탕입니다.</p>
+      <div class="cards">
+        <div class="card"><div class="k">석사</div><h3>충남대학교 평화안보대학원<br>과학수사학과 범죄수사 전공</h3><p>석사 졸업</p></div>
+        <div class="card"><div class="k">석사</div><h3>경찰대학 치안대학원<br>수사학과 범죄수사 전공</h3><p>석사 졸업</p></div>
+      </div>
+      <div class="ask">
+        <p>학력·전공과 관련해 궁금한 점이 있으신가요?</p>
+        <a class="btn btn-kakao js-kakao" target="_blank" rel="noopener">💬 카카오톡 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연구 논문 -->
+  <section class="block" id="papers">
+    <div class="wrap">
+      <div class="eyebrow">RESEARCH</div>
+      <h2>연구 논문</h2>
+      <p class="sub">강의는 연구에서 나옵니다. 성폭력·수사·약물 분야를 직접 연구하고 논문으로 발표해 왔습니다. (사진을 누르면 크게 보입니다)</p>
+      <div class="papers">
+        <figure class="cert" data-full="images/paper-2012-thesis.png">
+          <img src="images/paper-2012-thesis.png" alt="전북지역 아동성폭력범죄의 특이성 분석과 예방에 관한 연구" loading="lazy">
+          <figcaption><b>2012 · 석사학위논문</b><br>전북지역 아동성폭력범죄의 특이성 분석과 예방에 관한 연구<br><small>충남대학교 평화안보대학원</small></figcaption>
+        </figure>
+        <figure class="cert" data-full="images/paper-2023-thesis.png">
+          <img src="images/paper-2023-thesis.png" alt="경찰관 법정증언 개선방안에 대한 실증적 연구" loading="lazy">
+          <figcaption><b>2023 · 석사학위논문</b><br>경찰관 법정증언 개선방안에 대한 실증적 연구: 조사자 증언제도를 중심으로<br><small>경찰대학 치안대학원</small></figcaption>
+        </figure>
+        <figure class="cert" data-full="images/paper-2025-journal.png">
+          <img src="images/paper-2025-journal.png" alt="마약류 수형자의 심리사회적 특성과 약물 사용 경험에 대한 현상학적 연구" loading="lazy">
+          <figcaption><b>2025 · 학술지 (KCI 등재, 공저)</b><br>마약류 수형자의 심리사회적 특성과 약물 사용 경험에 대한 현상학적 연구<br><small>범죄수사학연구 제11권 제2호</small></figcaption>
+        </figure>
+      </div>
+      <div class="ask">
+        <p>연구 내용이나 강의 연계에 관심이 있으신가요?</p>
+        <a class="btn btn-kakao js-kakao" target="_blank" rel="noopener">💬 카카오톡 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 교육 경력 -->
+  <section class="block soft" id="career">
+    <div class="wrap">
+      <div class="eyebrow">CAREER</div>
+      <h2>교육 경력</h2>
+      <p class="sub">수사를 직업으로 배우러 오는 경찰 수사관들을 대상으로 열정적으로 강의를 하고 있습니다.</p>
+      <div class="cards">
+        <div class="card"><div class="k">현재</div><h3>경찰수사연수원<br>반부패공공범죄수사학과 교수요원</h3><p>경찰 수사관 대상 전문 교육 담당</p></div>
+      </div>
+      <div class="ask">
+        <p>교육 과정·강의 방식이 궁금하시면 편하게 물어보세요.</p>
+        <a class="btn btn-kakao js-kakao" target="_blank" rel="noopener">💬 카카오톡 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 핵심 강의 영역 -->
+  <section class="block" id="courses">
+    <div class="wrap">
+      <div class="eyebrow">SIGNATURE COURSES</div>
+      <h2>핵심 강의 영역</h2>
+      <p class="sub">수사 현장에서 꼭 필요한 네 가지 분야를 이론과 실습으로 가르칩니다.</p>
+      <div class="courses">
+        <div class="course">
+          <div class="course-img"><img src="images/course-court.png" alt="법정증언 강의 장면" loading="lazy"></div>
+          <div class="course-body"><span>01</span><h3>질문기법과 법정증언</h3><p>묻는 법과 증언하는 법을 익혀, 법정에서 흔들리지 않는 진술을 만듭니다.</p></div>
+        </div>
+        <div class="course">
+          <div class="course-img"><img src="images/course-search.png" alt="압수수색 집행 이론 강의 장면" loading="lazy"></div>
+          <div class="course-body"><span>02</span><h3>압수수색 집행 이론과 실습</h3><p>절차와 법리를 이해하고, 실제 집행 상황을 실습으로 연습합니다.</p></div>
+        </div>
+        <div class="course">
+          <div class="course-img"><img src="images/course-interrogation.webp" alt="피의자신문기법 강의 표지" loading="lazy"></div>
+          <div class="course-body"><span>03</span><h3>피의자신문기법</h3><p>진술을 이끌어내는 신문의 원칙과 기술을 다룹니다.</p></div>
+        </div>
+        <div class="course">
+          <div class="course-img"><img src="images/course-gender.png" alt="성인지 감수성과 2차 피해 예방 강의 자료" loading="lazy"></div>
+          <div class="course-body"><span>04</span><h3>성인지 감수성과 2차 피해 예방</h3><p>피해자를 다시 아프게 하지 않는 수사와 응대의 기준을 배웁니다.</p></div>
+        </div>
+      </div>
+      <div class="ask">
+        <p>우리 기관에 맞는 강의 구성이 궁금하신가요?</p>
+        <a class="btn btn-kakao js-kakao" target="_blank" rel="noopener">💬 강의 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 전문교육 이수 -->
+  <section class="block soft" id="cert">
+    <div class="wrap">
+      <div class="eyebrow">QUALIFICATION</div>
+      <h2>전문자격 · 전문교육 이수</h2>
+      <p class="sub">"이 분야를 정말 아는 사람인가?"에 대한 답이 되는 공인 자격과 교육 이력입니다.</p>
+      <ul class="list">
+        <li><div><strong>경찰청 성폭력전문수사관</strong><span>성폭력 사건 수사 전문 자격</span></div></li>
+        <li><div><strong>임상심리사 2급</strong><span>사람의 마음과 행동을 이해하는 공인 심리 자격</span></div></li>
+        <li><div><strong>위촉 양성평등전문강사</strong><span>양성평등교육진흥원 위촉</span></div></li>
+        <li><div><strong>정신응급대응강사 교육 수료</strong><span>위기 상황에 대응하는 방법을 가르치기 위한 전문 교육</span></div></li>
+      </ul>
+      <h3 class="certs-title">자격증 확인하기 <small>(사진을 누르면 크게 보입니다)</small></h3>
+      <div class="certs">
+        <figure class="cert" data-full="images/cert-detective.png">
+          <img src="images/cert-detective.png" alt="경찰청 성폭력 전문수사관 인증서" loading="lazy">
+          <figcaption>경찰청 성폭력 전문수사관 인증서 (2012)</figcaption>
+        </figure>
+        <figure class="cert" data-full="images/cert-psychologist.png">
+          <img src="images/cert-psychologist.png" alt="임상심리사 2급 국가기술자격증" loading="lazy">
+          <figcaption>임상심리사 2급 국가기술자격증 (2025)</figcaption>
+        </figure>
+      </div>
+      <div class="ask">
+        <p>자격·이수 내용에 관해 궁금하신가요?</p>
+        <a class="btn btn-kakao js-kakao" target="_blank" rel="noopener">💬 카카오톡 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국가기관 강연 -->
+  <section class="block" id="lecture">
+    <div class="wrap">
+      <div class="eyebrow">LECTURES</div>
+      <h2>국가기관 강연</h2>
+      <p class="sub">공공기관과 교육기관이 강의를 맡기고 있습니다.</p>
+      <div class="chips">
+        <span class="chip">한국고용노동교육원</span>
+        <span class="chip">조달청</span>
+        <span class="chip">스포츠윤리센터</span>
+        <span class="chip">경찰대학</span>
+        <span class="chip">경찰인재개발원</span>
+        <span class="chip">그 외 다수</span>
+      </div>
+      <div class="ask">
+        <p>우리 기관·조직에 맞는 강의가 필요하신가요? 일정과 주제를 함께 정해드립니다.</p>
+        <a class="btn btn-kakao js-kakao" target="_blank" rel="noopener">💬 강연 섭외 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 강의 샘플 영상 -->
+  <!-- 강의 영상이 준비되면 YOUTUBE_ID만 넣으면 이 구역이 자동으로 나타납니다 -->
+  <section class="block" id="sample" style="display:none">
+    <div class="wrap">
+      <div class="eyebrow">SAMPLE</div>
+      <h2>강의 샘플 영상</h2>
+      <p class="sub">말로 듣는 것보다 직접 보시는 게 가장 정확합니다. 강의 분위기와 설명 방식을 먼저 확인해 보세요.</p>
+      <div class="video" id="videoBox"></div>
+    </div>
+  </section>
+
+  <!-- 음악 채널 소개 -->
+  <section class="block soft" id="music">
+    <div class="wrap">
+      <div class="music">
+        <div>
+          <div class="eyebrow">MUSIC CHANNEL</div>
+          <h2>강의실 밖에서는<br>음악으로 마음을 나눕니다</h2>
+          <p class="sub" style="margin-bottom:22px">사람의 마음을 이해하는 일을 하다 보니, 말로 다 닿지 못하는 감정이 있다는 걸 알게 되었습니다. 그 마음을 조용히 감싸는 노래를 모아 <b>하나모먼트(hanamoment)</b> 채널에 담고 있습니다.</p>
+          <ul class="music-points">
+            <li>잔잔한 발라드와 사랑 노래 플레이리스트</li>
+            <li>일본어·영어권 청취자와 함께하는 채널</li>
+            <li>잠시 쉬어가고 싶은 순간의 배경음악으로</li>
+          </ul>
+          <a class="btn btn-line" href="https://www.youtube.com/@hanamoment" target="_blank" rel="noopener">▶ 하나모먼트 채널 방문하기</a>
+        </div>
+        <a class="music-card" href="https://www.youtube.com/@hanamoment" target="_blank" rel="noopener" aria-label="하나모먼트 유튜브 채널 열기">
+          <div class="play">▶</div>
+          <b>hanamoment</b>
+          <span>잠시, 마음이 쉬어가는 순간</span>
+          <small>youtube.com/@hanamoment</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 강의를 선택하는 이유 -->
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">WHY</div>
+      <h2>이런 점이 다릅니다</h2>
+      <p class="sub">기관 담당자와 수강생이 가장 궁금해하는 세 가지입니다.</p>
+      <div class="cards">
+        <div class="card"><div class="k">01</div><h3>수사 현장과 학문을 모두 압니다</h3><p>범죄학·범죄수사 석사 과정과 수사관 교육 현장 경험을 함께 갖추고 있습니다.</p></div>
+        <div class="card"><div class="k">02</div><h3>사람을 이해하는 강의입니다</h3><p>임상심리사 자격을 바탕으로, 사건 당사자의 심리와 행동까지 함께 다룹니다.</p></div>
+        <div class="card"><div class="k">03</div><h3>기관에 맞춰 준비합니다</h3><p>대상, 시간, 주제에 맞게 강의 내용을 조율해 드립니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3단계 안내 (참고 사이트의 STEP 구성) -->
+  <section class="block soft">
+    <div class="wrap">
+      <div class="eyebrow">PROCESS</div>
+      <h2>강의는 이렇게 진행됩니다</h2>
+      <p class="sub">복잡한 절차 없이, 세 단계면 충분합니다.</p>
+      <div class="steps">
+        <div class="step"><span>STEP 1</span><h3>카카오톡 문의</h3><p>강의 주제, 대상, 희망 일정만 간단히 남겨주세요.</p></div>
+        <div class="step"><span>STEP 2</span><h3>맞춤 협의</h3><p>기관 상황에 맞춰 내용과 시간을 함께 정합니다.</p></div>
+        <div class="step"><span>STEP 3</span><h3>강의 진행</h3><p>현장에서 바로 쓸 수 있는 내용으로 강의합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 마지막 문의 -->
+  <section class="final" id="contact">
+    <div class="wrap">
+      <h2>강의가 필요하시다면<br>지금 편하게 문의하세요</h2>
+      <p>카카오톡 오픈채팅으로 강의 주제, 일정, 대상만 알려주시면 확인 후 안내해 드립니다.</p>
+      <a class="btn btn-kakao js-kakao" target="_blank" rel="noopener">💬 카카오톡으로 문의하기</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 차지현 · 경찰수사연수원 교수요원</div>
+</footer>
+
+<a class="btn btn-kakao float js-kakao" target="_blank" rel="noopener">💬 문의</a>
+
+<div class="lightbox" id="lightbox"><img id="lightboxImg" alt="자격증 크게 보기"></div>
+
+<script>
+  // 카카오톡 버튼 전체에 주소 연결
+  document.querySelectorAll(".js-kakao").forEach(function(a){ a.href = KAKAO_URL; });
+
+  // 사진: 파일이 있으면 표시, 없으면 안내 상자 유지
+  (function(){
+    var img = document.getElementById("photoImg");
+    img.onload = function(){ img.style.display="block"; document.getElementById("photoPh").style.display="none"; };
+    img.src = PHOTO;
+  })();
+
+  // 자격증 사진 크게 보기
+  (function(){
+    var box = document.getElementById("lightbox"), big = document.getElementById("lightboxImg");
+    document.querySelectorAll(".cert").forEach(function(c){
+      c.onclick = function(){ big.src = c.dataset.full; box.classList.add("on"); };
+    });
+    box.onclick = function(){ box.classList.remove("on"); };
+  })();
+
+  // 유튜브 영상
+  if (YOUTUBE_ID) {
+    document.getElementById("sample").style.display = "block";
+    document.getElementById("videoBox").innerHTML =
+      '<iframe src="https://www.youtube.com/embed/' + YOUTUBE_ID +
+      '" title="강의 샘플 영상" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  }
+</script>
+</body>
+</html>
